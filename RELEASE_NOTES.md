@@ -4,6 +4,19 @@
 
 Local SOCKS5 proxy manager powered by Xray-core (VLESS + Reality). Use with any SOCKS5-capable app; originally made for Telegram.
 
+**What's new**
+
+- Application renamed to **proxy_manager_socks5_xray** (from ProxyTg)
+- Positioned as a universal SOCKS5 proxy for any application; Telegram is documented as one of the use cases
+- Platform folders and release archives no longer include version in names (e.g. `proxy_manager_socks5_xray_mac_arm64.zip`)
+- Xray-core binaries and geo data are now included in the repository (previously ignored by git)
+
+**Fixed / improved**
+
+- Documentation restructured: separate section “Using with Telegram”, new section “Using with other applications” (browsers, curl, any SOCKS5 app)
+- Telegram Desktop path updated: **Settings → Advanced → Proxy server settings → Add proxy**
+- Script startup message shows SOCKS5 address first, then Telegram as a hint
+
 **Download**
 
 | File | Platform | Architecture |
@@ -18,7 +31,7 @@ Local SOCKS5 proxy manager powered by Xray-core (VLESS + Reality). Use with any 
 2. Extract it
 3. Edit `client_config.json` — add your server details (or use `--vless "vless://..."`)
 4. Run: `python3 teleproxy.py` (macOS/Linux) or `python teleproxy.py` (Windows)
-5. Point any app to SOCKS5 `127.0.0.1:2080`. For Telegram: Settings → Proxy → SOCKS5 → same address.
+5. Point any app to SOCKS5 `127.0.0.1:2080`. For Telegram: Settings → Advanced → Proxy server settings → Add proxy.
 
 **Components**
 
@@ -31,6 +44,19 @@ Local SOCKS5 proxy manager powered by Xray-core (VLESS + Reality). Use with any 
 ### Русский
 
 Локальный SOCKS5 прокси-менеджер на базе Xray-core (VLESS + Reality). Подходит для любого приложения с поддержкой SOCKS5; изначально делался под Telegram.
+
+**Что нового**
+
+- Приложение переименовано в **proxy_manager_socks5_xray** (ранее ProxyTg)
+- Позиционируется как универсальный SOCKS5 прокси для любого приложения; Telegram описан как один из сценариев
+- В названиях папок и архивов релиза убрана версионность (например, `proxy_manager_socks5_xray_mac_arm64.zip`)
+- Ядра Xray и geo-файлы теперь включены в репозиторий (ранее были в .gitignore)
+
+**Исправления и изменения**
+
+- Документация переструктурирована: отдельный блок «Использование с Telegram», новый блок «Использование с другими приложениями» (браузеры, curl, любое приложение с SOCKS5)
+- Обновлён путь в Telegram Desktop: **Настройки → Продвинутые настройки → Настройки прокси сервера → Добавить прокси**
+- При запуске скрипта сначала выводится адрес SOCKS5, затем подсказка по Telegram
 
 **Скачивание**
 
@@ -46,7 +72,7 @@ Local SOCKS5 proxy manager powered by Xray-core (VLESS + Reality). Use with any 
 2. Распакуйте
 3. Отредактируйте `client_config.json` — подставьте данные вашего сервера (или используйте `--vless "vless://..."`)
 4. Запустите: `python3 teleproxy.py` (macOS/Linux) или `python teleproxy.py` (Windows)
-5. Укажите в любом приложении SOCKS5 `127.0.0.1:2080`. Для Telegram: Настройки → Прокси → SOCKS5 → тот же адрес.
+5. Укажите в любом приложении SOCKS5 `127.0.0.1:2080`. Для Telegram: Настройки → Продвинутые настройки → Настройки прокси сервера → Добавить прокси.
 
 **Компоненты**
 
