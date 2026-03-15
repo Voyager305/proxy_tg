@@ -8,9 +8,9 @@ Minimal console proxy manager for Telegram using Xray-core (VLESS + Reality).
 
 | File | Platform | Architecture |
 |------|----------|--------------|
-| `ProxyTg_v0.1.2_mac_arm64.zip` | macOS | ARM64 (Apple Silicon) |
-| `ProxyTg_v0.1.2_linux_amd64.zip` | Linux | x86-64 (amd64) |
-| `ProxyTg_v0.1.2_win_amd64.zip` | Windows | x86-64 (amd64) |
+| `ProxyTg_mac_arm64.zip` | macOS | ARM64 (Apple Silicon) |
+| `ProxyTg_linux_amd64.zip` | Linux | x86-64 (amd64) |
+| `ProxyTg_win_amd64.zip` | Windows | x86-64 (amd64) |
 
 **Quick start**
 
@@ -36,9 +36,9 @@ Minimal console proxy manager for Telegram using Xray-core (VLESS + Reality).
 
 | Файл | Платформа | Архитектура |
 |------|-----------|-------------|
-| `ProxyTg_v0.1.2_mac_arm64.zip` | macOS | ARM64 (Apple Silicon) |
-| `ProxyTg_v0.1.2_linux_amd64.zip` | Linux | x86-64 (amd64) |
-| `ProxyTg_v0.1.2_win_amd64.zip` | Windows | x86-64 (amd64) |
+| `ProxyTg_mac_arm64.zip` | macOS | ARM64 (Apple Silicon) |
+| `ProxyTg_linux_amd64.zip` | Linux | x86-64 (amd64) |
+| `ProxyTg_win_amd64.zip` | Windows | x86-64 (amd64) |
 
 **Быстрый старт**
 

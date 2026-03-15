@@ -10,8 +10,8 @@ mkdir -p "$DIST_DIR"
 pack() {
     local platform=$1
     local arch=$2
-    local src="proxy_tg_${platform}_${arch}_v${VERSION}"
-    local archive="ProxyTg_v${VERSION}_${platform}_${arch}.zip"
+    local src="proxy_tg_${platform}_${arch}"
+    local archive="ProxyTg_${platform}_${arch}.zip"
 
     if [ ! -d "$src" ]; then
         echo "SKIP: $src not found"

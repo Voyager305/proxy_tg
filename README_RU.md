@@ -1,6 +1,6 @@
 # ProxyTg
 
-**Минимальный консольный прокси-менеджер для Telegram.**
+**Консольный прокси-менеджер для Telegram.**
 
 Запускает [Xray-core](https://github.com/XTLS/Xray-core) как subprocess и поднимает локальный SOCKS5 порт. Без GUI, без root, без лишних зависимостей — только Python и один скрипт.
 
@@ -24,9 +24,9 @@
 
 | Платформа | Архив | Архитектура |
 |-----------|-------|-------------|
-| macOS | `ProxyTg_v0.1.2_mac_arm64.zip` | ARM64 (Apple Silicon) |
-| Linux | `ProxyTg_v0.1.2_linux_amd64.zip` | x86-64 (amd64) |
-| Windows | `ProxyTg_v0.1.2_win_amd64.zip` | x86-64 (amd64) |
+| macOS | `ProxyTg_mac_arm64.zip` | ARM64 (Apple Silicon) |
+| Linux | `ProxyTg_linux_amd64.zip` | x86-64 (amd64) |
+| Windows | `ProxyTg_win_amd64.zip` | x86-64 (amd64) |
 
 Каждый архив — самодостаточный пакет: скрипт + бинарник Xray + geo-файлы.
 
@@ -155,7 +155,7 @@ python3 teleproxy.py
 **macOS / Linux:**
 
 ```bash
-cd proxy_tg_mac_arm64_v0.1.2    # или proxy_tg_linux_amd64_v0.1.2
+cd proxy_tg_mac_arm64    # или proxy_tg_linux_amd64
 python3 teleproxy.py
 ```
 
@@ -164,7 +164,7 @@ python3 teleproxy.py
 **Windows:**
 
 ```cmd
-cd proxy_tg_win_amd64_v0.1.2
+cd proxy_tg_win_amd64
 python teleproxy.py
 ```
 
@@ -231,13 +231,13 @@ app = Client(
 ## Структура проекта
 
 ```
-proxy_tg_v0.1.2/
+proxy_tg/
 │
 ├── README.md
 ├── README_RU.md
 ├── LICENSE
 │
-├── proxy_tg_mac_arm64_v0.1.2/      # macOS (ARM64 / Apple Silicon)
+├── proxy_tg_mac_arm64/      # macOS (ARM64 / Apple Silicon)
 │   ├── teleproxy.py
 │   ├── client_config.json
 │   ├── README.md
@@ -247,7 +247,7 @@ proxy_tg_v0.1.2/
 │       ├── geoip.dat
 │       └── geosite.dat
 │
-├── proxy_tg_linux_amd64_v0.1.2/    # Linux (x86-64 / amd64)
+├── proxy_tg_linux_amd64/    # Linux (x86-64 / amd64)
 │   ├── teleproxy.py
 │   ├── client_config.json
 │   ├── README.md
@@ -257,7 +257,7 @@ proxy_tg_v0.1.2/
 │       ├── geoip.dat
 │       └── geosite.dat
 │
-└── proxy_tg_win_amd64_v0.1.2/      # Windows (x86-64 / amd64)
+└── proxy_tg_win_amd64/      # Windows (x86-64 / amd64)
     ├── teleproxy.py
     ├── client_config.json
     ├── README.md
