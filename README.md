@@ -20,11 +20,11 @@
 
 Выберите архив для вашей ОС:
 
-| Платформа | Папка | Архитектура |
+| Платформа | Архив | Архитектура |
 |-----------|-------|-------------|
-| macOS | `proxy_tg_mac_v0.1.1` | ARM64 (Apple Silicon) |
-| Linux | `proxy_tg_linux_v0.1.1` | x86-64 (amd64) |
-| Windows | `proxy_tg_win_v0.1.1` | x86-64 (amd64) |
+| macOS | `ProxyTg_v0.1.1_mac_arm64.zip` | ARM64 (Apple Silicon) |
+| Linux | `ProxyTg_v0.1.1_linux_amd64.zip` | x86-64 (amd64) |
+| Windows | `ProxyTg_v0.1.1_win_amd64.zip` | x86-64 (amd64) |
 
 Каждая папка — самодостаточный пакет: скрипт + бинарник Xray + geo-файлы.
 

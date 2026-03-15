@@ -6,9 +6,9 @@
 
 | Файл | Платформа | Архитектура |
 |------|-----------|-------------|
-| `ProxyTg_v0.1.1_mac.zip` | macOS | ARM64 (Apple Silicon) |
-| `ProxyTg_v0.1.1_linux.zip` | Linux | x86-64 (amd64) |
-| `ProxyTg_v0.1.1_win.zip` | Windows | x86-64 (amd64) |
+| `ProxyTg_v0.1.1_mac_arm64.zip` | macOS | ARM64 (Apple Silicon) |
+| `ProxyTg_v0.1.1_linux_amd64.zip` | Linux | x86-64 (amd64) |
+| `ProxyTg_v0.1.1_win_amd64.zip` | Windows | x86-64 (amd64) |
 
 ### Быстрый старт
 

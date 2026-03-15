@@ -7,9 +7,14 @@ DIST_DIR="dist"
 rm -rf "$DIST_DIR"
 mkdir -p "$DIST_DIR"
 
+declare -A ARCH
+ARCH[mac]="arm64"
+ARCH[linux]="amd64"
+ARCH[win]="amd64"
+
 for platform in mac linux win; do
     src="proxy_tg_${platform}_v${VERSION}"
-    archive="ProxyTg_v${VERSION}_${platform}.zip"
+    archive="ProxyTg_v${VERSION}_${platform}_${ARCH[$platform]}.zip"
 
     if [ ! -d "$src" ]; then
         echo "SKIP: $src not found"
