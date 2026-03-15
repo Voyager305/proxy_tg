@@ -7,24 +7,25 @@ DIST_DIR="dist"
 rm -rf "$DIST_DIR"
 mkdir -p "$DIST_DIR"
 
-declare -A ARCH
-ARCH[mac]="arm64"
-ARCH[linux]="amd64"
-ARCH[win]="amd64"
-
-for platform in mac linux win; do
-    src="proxy_tg_${platform}_v${VERSION}"
-    archive="ProxyTg_v${VERSION}_${platform}_${ARCH[$platform]}.zip"
+pack() {
+    local platform=$1
+    local arch=$2
+    local src="proxy_tg_${platform}_v${VERSION}"
+    local archive="ProxyTg_v${VERSION}_${platform}_${arch}.zip"
 
     if [ ! -d "$src" ]; then
         echo "SKIP: $src not found"
-        continue
+        return
     fi
 
     echo "Packaging $src -> $archive"
     zip -r "$DIST_DIR/$archive" "$src" -x "*/__pycache__/*" "*/.DS_Store"
     echo "  Done: $(du -h "$DIST_DIR/$archive" | cut -f1)"
-done
+}
+
+pack mac arm64
+pack linux amd64
+pack win amd64
 
 echo ""
 echo "Release archives:"
