@@ -6,7 +6,7 @@ Runs [Xray-core](https://github.com/XTLS/Xray-core) as a subprocess and exposes 
 
 Supports **VLESS + Reality** — a modern protocol resilient to blocking.
 
-**[Русская версия / Russian version](README_RU.md)**
+**[Russian version](README_RU.md)**
 
 ---
 
@@ -16,7 +16,7 @@ Supports **VLESS + Reality** — a modern protocol resilient to blocking.
 - VLESS + Reality support (Xray-core 26+)
 - Runs on **macOS**, **Linux**, and **Windows**
 - One-command run, no installation
-- Originally designed for Telegram; works with Telethon, Pyrogram, and any SOCKS5 client
+- Works with Telethon, Pyrogram, and any SOCKS5 client
 
 ## Download
 
@@ -189,7 +189,7 @@ If you get JSON back, the proxy is up.
 
 ## Using with Telegram
 
-The project was originally made for Telegram. To use it with Telegram:
+To use it with Telegram:
 
 **Telegram Desktop:**  
 **Settings → Advanced → Proxy server settings → Add proxy**
@@ -199,8 +199,6 @@ The project was originally made for Telegram. To use it with Telegram:
 | Type | SOCKS5 |
 | Host | `127.0.0.1` |
 | Port | `2080` |
-
-On Telegram Mobile: same path in Settings, then SOCKS5 with the same values.
 
 ### Telethon / Pyrogram
 
@@ -235,7 +233,7 @@ app = Client(
 
 ```bash
 python3 teleproxy.py                          # default config
-python3 teleproxy.py --vless "vless://..."    # from VLESS link (saves config)
+python3 teleproxy.py -v "vless://..."    # from VLESS link (saves config)
 python3 teleproxy.py -c my_config.json        # custom config file
 python3 teleproxy.py -x /usr/local/bin/xray   # custom Xray path
 python3 teleproxy.py -q                        # quiet (minimal output)
@@ -323,7 +321,7 @@ Download a new binary from [releases](https://github.com/XTLS/Xray-core/releases
 
 | Component | Version |
 |-----------|--------|
-| proxy_manager_socks5_xray | 0.1.2 |
+| proxy_manager_socks5_xray | 0.1.3 |
 | Xray-core | 26.2.6 |
 
 ## Notes

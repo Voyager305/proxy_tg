@@ -16,7 +16,7 @@
 - Поддержка VLESS + Reality (Xray-core 26+)
 - Работает на **macOS**, **Linux** и **Windows**
 - Запуск одной командой, без установки
-- Изначально делался под Telegram; совместим с Telethon, Pyrogram и любыми SOCKS5-клиентами
+- Совместим с Telethon, Pyrogram и любыми SOCKS5-клиентами
 
 ## Скачивание
 
@@ -189,7 +189,7 @@ curl --socks5 127.0.0.1:2080 https://api.telegram.org
 
 ## Использование с Telegram
 
-Проект изначально делался под Telegram. Как настроить:
+Как настроить:
 
 **Telegram Desktop:**  
 **Настройки → Продвинутые настройки → Настройки прокси сервера → Добавить прокси**
@@ -199,8 +199,6 @@ curl --socks5 127.0.0.1:2080 https://api.telegram.org
 | Тип | SOCKS5 |
 | Хост | `127.0.0.1` |
 | Порт | `2080` |
-
-В мобильном Telegram: те же параметры в разделе прокси.
 
 ### Telethon / Pyrogram
 
@@ -235,7 +233,7 @@ app = Client(
 
 ```bash
 python3 teleproxy.py                          # запуск с настройками по умолчанию
-python3 teleproxy.py --vless "vless://..."    # запуск из VLESS-ссылки (сохраняет конфиг)
+python3 teleproxy.py -v "vless://..."    # запуск из VLESS-ссылки (сохраняет конфиг)
 python3 teleproxy.py -c my_config.json        # другой конфиг
 python3 teleproxy.py -x /usr/local/bin/xray   # свой путь к Xray
 python3 teleproxy.py -q                        # тихий режим (без логов)
@@ -323,7 +321,7 @@ proxy_manager_socks5_xray/
 
 | Компонент | Версия |
 |-----------|--------|
-| proxy_manager_socks5_xray | 0.1.2 |
+| proxy_manager_socks5_xray | 0.1.3 |
 | Xray-core | 26.2.6 |
 
 ## Примечания

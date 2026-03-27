@@ -2,19 +2,12 @@
 
 ### English
 
-Local SOCKS5 proxy manager powered by Xray-core (VLESS + Reality). Use with any SOCKS5-capable app; originally made for Telegram.
+Local SOCKS5 proxy manager powered by Xray-core (VLESS + Reality). Use with any SOCKS5-capable app.
 
 **What's new**
 
 - Added a separate **Intel Mac** package: `proxy_manager_socks5_xray_mac_amd64.zip`
-- Packaging script now builds both macOS variants: `mac_arm64` and `mac_amd64`
 - Main documentation updated to include Intel macOS in download and run sections
-
-**Fixed / improved**
-
-- Documentation restructured: separate section “Using with Telegram”, new section “Using with other applications” (browsers, curl, any SOCKS5 app)
-- Telegram Desktop path updated: **Settings → Advanced → Proxy server settings → Add proxy**
-- Script startup message shows SOCKS5 address first, then Telegram as a hint
 
 **Download**
 
@@ -43,19 +36,12 @@ Local SOCKS5 proxy manager powered by Xray-core (VLESS + Reality). Use with any 
 
 ### Русский
 
-Локальный SOCKS5 прокси-менеджер на базе Xray-core (VLESS + Reality). Подходит для любого приложения с поддержкой SOCKS5; изначально делался под Telegram.
+Локальный SOCKS5 прокси-менеджер на базе Xray-core (VLESS + Reality). Подходит для любого приложения с поддержкой SOCKS5.
 
 **Что нового**
 
 - Добавлен отдельный пакет для **Intel Mac**: `proxy_manager_socks5_xray_mac_amd64.zip`
-- Скрипт упаковки теперь собирает обе версии macOS: `mac_arm64` и `mac_amd64`
 - Основная документация обновлена: добавлена Intel-версия macOS в разделы скачивания и запуска
-
-**Исправления и изменения**
-
-- Документация переструктурирована: отдельный блок «Использование с Telegram», новый блок «Использование с другими приложениями» (браузеры, curl, любое приложение с SOCKS5)
-- Обновлён путь в Telegram Desktop: **Настройки → Продвинутые настройки → Настройки прокси сервера → Добавить прокси**
-- При запуске скрипта сначала выводится адрес SOCKS5, затем подсказка по Telegram
 
 **Скачивание**
 
@@ -70,7 +56,7 @@ Local SOCKS5 proxy manager powered by Xray-core (VLESS + Reality). Use with any 
 
 1. Скачайте архив для вашей ОС
 2. Распакуйте
-3. Отредактируйте `client_config.json` — подставьте данные вашего сервера (или используйте `--vless "vless://..."`)
+3. Отредактируйте `client_config.json` — подставьте данные вашего сервера (или используйте флаг при запуске `--vless "vless://..."`)
 4. Запустите: `python3 teleproxy.py` (macOS/Linux) или `python teleproxy.py` (Windows)
 5. Укажите в любом приложении SOCKS5 `127.0.0.1:2080`. Для Telegram: Настройки → Продвинутые настройки → Настройки прокси сервера → Добавить прокси.
 
